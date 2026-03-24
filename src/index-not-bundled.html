@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lewis Cooke - Freelance .NET / Umbraco Developer - Bristol</title>
+    <meta name="description" content="Online portfolio of Bristol based freelance .NET / Umbraco developer, Lewis Cooke.">
+    <meta name="keywords" content="freelance, freelancer, umbraco, .net, contract, contractor, bristol">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+        <script>
+            document.createElement('address');
+            document.createElement('header');
+            document.createElement('main');
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('footer');
+        </script>
+    <![endif]-->
+
+    <style>
+        /* =========================================================
+           fonts.css — Oxygen font-face declarations
+           (fonts served from CDN; local copies in assets/fonts/)
+        ========================================================= */
+        @font-face {
+            font-family: 'Oxygen-Regular';
+            src: url('../Portfolio.WWW/assets/fonts/Oxygen-Regular.eot');
+            src: url('../Portfolio.WWW/assets/fonts/Oxygen-Regular.eot?#iefix') format('embedded-opentype'),
+                 url('../Portfolio.WWW/assets/fonts/Oxygen-Regular.woff') format('woff'),
+                 url('../Portfolio.WWW/assets/fonts/Oxygen-Regular.ttf') format('truetype'),
+                 url('../Portfolio.WWW/assets/fonts/Oxygen-Regular.svg#sOxygen-Regular') format('svg');
+        }
+        @font-face {
+            font-family: 'Oxygen-Bold';
+            src: url('../Portfolio.WWW/assets/fonts/Oxygen-Bold.eot');
+            src: url('../Portfolio.WWW/assets/fonts/Oxygen-Bold.eot?#iefix') format('embedded-opentype'),
+                 url('../Portfolio.WWW/assets/fonts/Oxygen-Bold.woff') format('woff'),
+                 url('../Portfolio.WWW/assets/fonts/Oxygen-Bold.ttf') format('truetype'),
+                 url('../Portfolio.WWW/assets/fonts/Oxygen-Bold.svg#sOxygen-Bold') format('svg');
+        }
+
+        /* =========================================================
+           normalize.css v1.1.3
+        ========================================================= */
+        article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+        audio,canvas,video{display:inline-block}
+        audio:not([controls]){display:none;height:0}
+        [hidden]{display:none}
+        html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+        button,html,input,select,textarea{font-family:sans-serif}
+        body{margin:0}
+        a:focus{outline:dotted thin}
+        a:active,a:hover{outline:0}
+        h1{font-size:2em;margin:.67em 0}
+        h2{font-size:1.5em;margin:.83em 0}
+        h3{font-size:1.17em;margin:1em 0}
+        h4{font-size:1em;margin:1.33em 0}
+        h5{font-size:.83em;margin:1.67em 0}
+        h6{font-size:.67em;margin:2.33em 0}
+        abbr[title]{border-bottom:1px dotted}
+        b,strong{font-weight:700}
+        blockquote{margin:1em 40px}
+        dfn{font-style:italic}
+        hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+        mark{background:#ff0;color:#000}
+        p,pre{margin:1em 0}
+        code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}
+        pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+        q{quotes:none}
+        q:after,q:before{content:'';content:none}
+        small{font-size:80%}
+        sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+        sup{top:-.5em}
+        sub{bottom:-.25em}
+        dl,menu,ol,ul{margin:1em 0}
+        dd{margin:0 0 0 40px}
+        menu,ol,ul{padding:0 0 0 40px}
+        nav ol,nav ul{list-style:none}
+        img{border:0;-ms-interpolation-mode:bicubic}
+        svg:not(:root){overflow:hidden}
+        figure,form{margin:0}
+        fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+        legend{border:0;padding:0;white-space:normal}
+        button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}
+        button,input{line-height:normal}
+        button,select{text-transform:none}
+        button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+        button[disabled],html input[disabled]{cursor:default}
+        input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+        input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+        input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+        button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+        textarea{overflow:auto;vertical-align:top}
+        table{border-collapse:collapse;border-spacing:0}
+
+        /* =========================================================
+           blog-listing shared article rules (also used by #work)
+        ========================================================= */
+        #work article, #blog-list article {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        #work article img, #blog-list article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        #work article h3, #blog-list article h3 {
+            margin: 0 0 0.5em 0;
+        }
+        #work article h3 a, #blog-list article h3 a {
+            color: #111;
+        }
+        #work article p, #blog-list article p {
+            margin: 0.75em 0;
+        }
+        #work article:last-child, #work article.last,
+        #blog-list article:last-child, #blog-list article.last {
+            margin-bottom: 0;
+        }
+
+        /* desktop breakpoint */
+        @media (min-width: 768px) {
+            body { font-size: 105%; }
+            body #topbar > div, body a#top > div { max-width: 768px; margin: 0 auto; }
+            body #blog-list article p { margin-left: 36%; }
+        }
+        @media (min-width: 1000px) {
+            body #wrapper { /* border rules omitted as per source */ }
+        }
+
+        /* =========================================================
+           Prism.js syntax highlighting theme
+        ========================================================= */
+        code[class*="language-"],pre[class*="language-"]{color:#000;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}
+        pre[class*="language-"]::-moz-selection,pre[class*="language-"] ::-moz-selection,code[class*="language-"]::-moz-selection,code[class*="language-"] ::-moz-selection{text-shadow:none;background:#b3d4fc}
+        pre[class*="language-"]::selection,pre[class*="language-"] ::selection,code[class*="language-"]::selection,code[class*="language-"] ::selection{text-shadow:none;background:#b3d4fc}
+        @media print{code[class*="language-"],pre[class*="language-"]{text-shadow:none}}
+        pre[class*="language-"]{padding:1em;margin:.5em 0;overflow:auto}
+        :not(pre) > code[class*="language-"],pre[class*="language-"]{background:#f5f2f0}
+        :not(pre) > code[class*="language-"]{padding:.1em;border-radius:.3em;white-space:normal}
+        .token.comment,.token.prolog,.token.doctype,.token.cdata{color:slategray}
+        .token.punctuation{color:#999}
+        .namespace{opacity:.7}
+        .token.property,.token.tag,.token.boolean,.token.number,.token.constant,.token.symbol,.token.deleted{color:#905}
+        .token.selector,.token.attr-name,.token.string,.token.char,.token.builtin,.token.inserted{color:#690}
+        .token.operator,.token.entity,.token.url,.language-css .token.string,.style .token.string{color:#a67f59;background:rgba(255,255,255,.5)}
+        .token.atrule,.token.attr-value,.token.keyword{color:#07a}
+        .token.function{color:#DD4A68}
+        .token.regex,.token.important,.token.variable{color:#e90}
+        .token.important,.token.bold{font-weight:bold}
+        .token.italic{font-style:italic}
+        .token.entity{cursor:help}
+
+        /* blog article tag alignment */
+        #blog article p.tags { text-align: center; }
+
+        /* =========================================================
+           main.css — site styles
+        ========================================================= */
+        .clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden}
+        .clearfix:after{clear:both}
+        .clearfix{zoom:1}
+
+        .layout {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        address { font-style: normal; }
+
+        header,nav,section,article,aside,footer,address,main { display: block; }
+
+        body {
+            font-family: Oxygen-Regular, Geneva, sans-serif;
+            font-size: 100%;
+            color: #111;
+        }
+
+        body nav {
+            background: #111;
+            color: #c393c3;
+            padding: 0 10px;
+        }
+
+        body nav ul {
+            position: relative;
+            margin-top: 0;
+            padding: 7px 0;
+        }
+
+        body nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        body nav ul li:last-child {
+            position: absolute;
+            right: 0;
+            margin-right: 0;
+        }
+
+        body main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 10px 40px 10px;
+        }
+
+        body #wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid black;
+        }
+
+        body #topbar, body a#top {
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 5px 0;
+            background: #111;
+            text-align: center;
+            color: #fff;
+        }
+
+        body #topbar a, body a#top a {
+            color: #fff;
+            font-family: Oxygen-Regular, Geneva, sans-serif;
+            -webkit-transition: color 0.5s;
+            -o-transition: color 0.5s;
+            -moz-transition: color 0.5s;
+            transition: color 0.5s;
+        }
+
+        body #topbar a:hover, body a#top a:hover { color: #90cd8c; }
+
+        body a#top {
+            display: block;
+            bottom: 0;
+            top: auto;
+            color: #fff;
+            font-family: Oxygen-Regular, Geneva, sans-serif;
+            -webkit-transition: color 0.5s;
+            -o-transition: color 0.5s;
+            -moz-transition: color 0.5s;
+            transition: color 0.5s;
+        }
+
+        body a#top:hover { color: #90cd8c; }
+
+        body header h1 {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        body header .logo {
+            display: block;
+            width: 20%;
+            max-width: 81px;
+            margin: 30px auto 0 auto;
+        }
+
+        body h1, body h2, body h3 {
+            font-family: Oxygen-Bold, Geneva, sans-serif;
+        }
+
+        body h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        body h2 {
+            padding: 0;
+            font-size: 1.65em;
+            text-align: center;
+        }
+
+        body h3 { font-size: 1.2em; }
+
+        body strong {
+            font-weight: normal;
+            font-family: Oxygen-Bold, Geneva, sans-serif;
+        }
+
+        body a {
+            font-family: Oxygen-Bold, Geneva, sans-serif;
+            color: #c393c3;
+            text-decoration: none;
+        }
+
+        body .mugshot {
+            float: left;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        body #moreinfo { display: none; }
+
+        body #work article, body #blog-list article {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        body #work article img, body #blog-list article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        body #work article h3, body #blog-list article h3 {
+            margin: 0 0 0.5em 0;
+        }
+
+        body #work article p, body #blog-list article p {
+            margin: 0.75em 0;
+        }
+
+        body #work article:last-child, body #work article.last,
+        body #blog-list article:last-child, body #blog-list article.last {
+            margin-bottom: 0;
+        }
+
+        body #contact {
+            padding-bottom: 1px;
+            margin-bottom: 30px;
+        }
+
+        body #contact form .row { margin-bottom: 10px; }
+        body #contact form label { margin-bottom: 5px; display: block; }
+        body #contact form .input-validation-error {
+            border: 1px solid #cc3a3a;
+            outline-color: #cc3a3a;
+        }
+        body #contact form input, body #contact form textarea {
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            outline-color: #90cd8c;
+        }
+        body #contact form input {
+            min-height: 35px;
+            padding: 0 5px;
+        }
+        body #contact form textarea {
+            min-height: 160px;
+            padding: 5px;
+        }
+        body #contact form button {
+            background: #90cd8c;
+            color: #fff;
+            padding: 10px;
+            border: 0;
+            font-family: Oxygen-Bold, Geneva, sans-serif;
+            margin-right: 5px;
+        }
+        body #contact #sending {
+            animation: pulse 0.66s infinite;
+        }
+        @keyframes pulse {
+            0%   { color: #111; }
+            100% { color: #90cd8c; }
+        }
+
+        /* desktop breakpoints (duplicated from compiled main.css) */
+        @media (min-width: 768px) {
+            body { font-size: 105%; }
+            body #topbar > div, body a#top > div { max-width: 768px; margin: 0 auto; }
+            body #work, body #blog-list { margin-bottom: 20px; }
+            body #work article, body #blog-list article {
+                position: relative;
+                min-height: 163px;
+            }
+            body #work article img, body #blog-list article img {
+                position: absolute;
+                width: 33%;
+                max-width: 440px;
+                margin-right: 20px;
+            }
+            body #work article p, body #blog-list article p { margin-left: 36%; }
+            body #contact .left { width: 49%; margin-right: 1%; float: left; }
+            body #contact .right { width: 48%; float: right; }
+        }
+    </style>
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>
+        <nav>
+            <ul class="layout">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li>
+                    <address>
+                        <a class="email"></a>
+                    </address>
+                </li>
+            </ul>
+        </nav>
+        <img src="../Portfolio.WWW/assets/img/logo.png" class="logo" alt="logo" />
+        <h1>Freelance .NET / Umbraco Developer - Bristol</h1>
+    </header>
+
+    <main>
+
+        <!-- ======================================================
+             Home / Intro section
+        ====================================================== -->
+        <section id="intro">
+            <p>
+                I'm Lewis Cooke, Bristol based freelance .NET developer specialising in Umbraco builds.
+                I have spent over 10 years building things for the web, and the last 5 of those in digital
+                agency environments. <a href="#" id="more">Tell me more...</a>
+            </p>
+            <div id="moreinfo">
+                <p>I'm a conscientious .NET developer and Umbraco enthusiast with decent front end knowledge
+                available to hire on a contract and freelance basis. Whilst my backend development skills are
+                strong, my object oriented Javascript is still sharp and I can handle the integration of
+                standards compliant markup with ease, and chip in with the writing of it if needed.</p>
+                <p>As happy being sole dev on a project as being one of many in a team, I have delivered
+                projects of all shapes and sizes from simple brochure style sites to more complex multilingual,
+                multi site builds with custom API integration and data capture.</p>
+                <p>The time I've spent working with agencies using Umbraco enables me to hit the ground
+                running at any stage of a project. If you need someone to take the project from requirements
+                gathering through specification writing, estimations and the rest, or whether you just need
+                extra development resource to help you achieve a deadline, I can help.</p>
+                <p>
+                    If you'd like to know more, feel free to drop me a line at <a class="email"></a>
+                </p>
+            </div>
+        </section>
+
+        <!-- ======================================================
+             Work / Projects section
+             Source: /root/Global/Projects/Project nodes, ordered by SortOrder.
+             Images: node.GetImageUrl("image") → Umbraco media URL.
+             Placeholder images point to the gif assets that appear in assets/index.html.
+        ====================================================== -->
+        <section id="work">
+            <h2>Latest Work</h2>
+            <p>Projects I have had the pleasure of working on include...</p>
+
+            <article>
+                <h3>Anonymous Client (NDA)</h3>
+                <img src="../Portfolio.WWW/assets/img/nda.gif" alt="">
+                <p>
+                    At <a href="http://t-rw.com/" target="_blank">TRW</a> I handled a new build in Umbraco 7
+                    for clients and staff of the world's second largest professional services network that
+                    featured heavy back office customisation, forum, custom search API integration, and a
+                    public/private content split. Dialogue was chosen as the base of the forum and much of
+                    the source was modified to allow for additional features such as opening/closing topics,
+                    AJAX file uploads, topic taxonomies, and marking posts as solutions in a Stack Overflow
+                    style.
+                </p>
+                <p>
+                    I created a multi stage content approval workflow and reporting tool using Angular in the
+                    back office enabling different user types to approve &amp; reject content at three stages
+                    before being published live. The site was integrated with Site Minder and displayed
+                    public/private versions of each page depending on authorisation &amp; authentication status.
+                </p>
+            </article>
+
+            <article>
+                <h3>299 Lighting</h3>
+                <img src="../Portfolio.WWW/assets/img/299.gif" alt="">
+                <p>
+                    At <a href="http://www.wearewattle.com/" target="_blank">Wattle</a> I developed a clean
+                    Umbraco 7 build for Bristol based lighting retailer 299 utilising the grid datatype which
+                    allowed for back office visualisation and control of Bootstrap integration. It included a
+                    dynamic product search using AJAX and mustache.js enabling searching within a filtered
+                    selection and further filtering of returned results.
+                </p>
+            </article>
+
+            <article>
+                <h3>Anonymous Client (NDA)</h3>
+                <img src="../Portfolio.WWW/assets/img/nda.gif" alt="">
+                <p>
+                    At <a href="http://www.connect-group.com" target="_blank">Connect Group</a> I worked on
+                    multisite Umbraco 6/7 builds for a British multinational automotive company, customising
+                    the back office experience to include a caching dashboard control using Akamai's content
+                    service and AngularJS.
+                </p>
+            </article>
+
+            <article>
+                <h3>Anonymous Client (NDA)</h3>
+                <img src="../Portfolio.WWW/assets/img/nda2.gif" alt="">
+                <p>
+                    At <a href="http://www.brand42.co.uk" target="_blank">Brand42</a> I developed new
+                    features and functionality for an Umbraco multilingual build including location based
+                    redirection using IP and custom search functionality.
+                </p>
+            </article>
+
+            <article>
+                <h3>Anonymous Client (NDA)</h3>
+                <img src="../Portfolio.WWW/assets/img/nda.gif" alt="">
+                <p>
+                    Non disclosure agreement (NDA) prevents me from disclosing the client name, but think
+                    high end luxury travel provider. At <a href="http://www.gibedigital.co.uk" target="_blank">Gibe</a>
+                    I worked on this Umbraco 7 build and amongst other things was responsible for a custom
+                    property search and AJAX based filtering mechanism using Examine &amp; mustache.js.
+                </p>
+            </article>
+
+            <article>
+                <h3>National Centre for High Sensitivity</h3>
+                <img src="../Portfolio.WWW/assets/img/nchs.gif" alt="">
+                <p>
+                    For this Umbraco 7 build for the charity NCHS I was the sole back end developer. The
+                    site includes integration with the Meetup API for events listings and a custom dashboard
+                    control for data export.
+                </p>
+            </article>
+
+            <article>
+                <h3>Eight Feet Tall</h3>
+                <img src="../Portfolio.WWW/assets/img/eft.gif" alt="">
+                <p>
+                    For Mondo Media I handled phase 2 development of marketing agency Eight Feet Tall's
+                    website. This consisted of additional templates and functionality centred around news
+                    and blogs.
+                </p>
+            </article>
+
+            <article>
+                <h3>Procorre</h3>
+                <img src="../Portfolio.WWW/assets/img/procorre.gif" alt="">
+                <p>
+                    Working at <a href="http://www.mentordigital.co.uk" target="_blank">Mentor Digital</a>,
+                    this Umbraco 6 website was built using their open source 'Web Blocks' package. It
+                    includes dynamic feed pages featuring tagged content that is filterable via AJAX.
+                </p>
+            </article>
+
+            <article>
+                <h3>Anonymous Client (NDA)</h3>
+                <img src="../Portfolio.WWW/assets/img/nda2.gif" alt="">
+                <p>
+                    At <a href="http://www.mayflymedia.co.uk" target="_blank">Mayfly</a>, I was the sole
+                    backend dev responsible for this Umbraco multilingual build which houses 20+ sites and
+                    features the ability to customise individual page relationships for use with the
+                    site/language switcher. It also integrates with the client's API to generate itinerary
+                    and event listings.
+                </p>
+            </article>
+
+            <article>
+                <h3>Kantar Media</h3>
+                <img src="../Portfolio.WWW/assets/img/kantar.gif" alt="">
+                <p>
+                    Working at <a href="http://www.mayflymedia.co.uk" target="_blank">Mayfly</a>, I
+                    delivered this Umbraco multilingual build which featured two custom search mechanisms
+                    and a modular design allowing pages to be constructed from any number of pre-defined
+                    child nodes enabling greater complexity and flexibility outside of standard templates.
+                </p>
+            </article>
+
+            <article>
+                <h3>Mind</h3>
+                <img src="../Portfolio.WWW/assets/img/mind.gif" alt="">
+                <p>
+                    At <a href="http://www.mayflymedia.co.uk" target="_blank">Mayfly</a>, I worked on the
+                    Mind charity website. It features a custom event booking system including SagePay
+                    integration with multi stage Contour forms, and AJAX filtering of listing pages
+                    allowing users quick access to the most relevant information.
+                </p>
+            </article>
+
+            <article>
+                <h3>Watson</h3>
+                <img src="../Portfolio.WWW/assets/img/watson.gif" alt="">
+                <p>
+                    An earlier project — a brochure build for Watson, developed at Mayfly using Umbraco.
+                </p>
+            </article>
+
+            <article>
+                <h3>PwC</h3>
+                <img src="../Portfolio.WWW/assets/img/pwc.gif" alt="">
+                <p>
+                    Working at a digital agency I contributed to front-end and back-end development work
+                    for PwC, building out Umbraco templates and custom functionality.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- ======================================================
+             Contact section — rendered via _Contact.cshtml partial
+             which embeds _ContactForm.cshtml.
+             The Ajax.BeginForm is replaced with a plain HTML form;
+             the reCAPTCHA widget is retained via the Google API script.
+        ====================================================== -->
+        <section id="contact" class="clearfix">
+            <h2>Get in touch</h2>
+            <div class="left">
+                <p>
+                    If you'd like to chat, find out more, or request a copy of my CV, feel free to send an
+                    email to <a class="email"></a> or give me a call on <a class="phone"></a>.
+                </p>
+                <p>
+                    You can also find me on
+                    <a href="https://www.linkedin.com/in/lewis-cooke-93868811" target="_blank">LinkedIn</a>.
+                </p>
+            </div>
+            <div class="right">
+                <!--
+                    NOTE: This form originally used Umbraco Surface Controller (Ajax.BeginForm → ContactSurface/Submit).
+                    In this static version it is a non-functional display stub.
+                    To wire it up, point the action attribute at your preferred form handler endpoint.
+                -->
+                <form action="#" method="post" id="contact-form">
+                    <div class="row">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" name="Name" placeholder="Your name">
+                    </div>
+                    <div class="row">
+                        <label for="ContactDetails">Email / Phone</label>
+                        <input type="text" id="ContactDetails" name="ContactDetails" placeholder="Email address or phone number">
+                    </div>
+                    <div class="row">
+                        <label for="Message">Message</label>
+                        <textarea id="Message" name="Message" placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lf-g9cUAAAAAOCsjXqCSfT1MA1kbLxdVCDQvTJg"></div><br>
+                    <button type="submit">Send</button>
+                    <span id="sending" style="display:none;">Sending...</span>
+                    <span id="status"></span>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <a id="top" href="#" style="display:none;">Top</a>
+
+    <!-- =========================================================
+         JavaScript
+         jquery-1.10.2.min.js → plugins.js → main.js
+         Paths are relative to this file's location in /static/
+    ========================================================= -->
+    <script src="../Portfolio.WWW/assets/js/vendor/jquery-1.10.2.min.js"></script>
+
+    <!-- plugins.js: console stub + placeholder for jQuery plugins -->
+    <script>
+        (function() {
+            var method;
+            var noop = function () {};
+            var methods = [
+                'assert','clear','count','debug','dir','dirxml','error',
+                'exception','group','groupCollapsed','groupEnd','info','log',
+                'markTimeline','profile','profileEnd','table','time','timeEnd',
+                'timeStamp','trace','warn'
+            ];
+            var length = methods.length;
+            var console = (window.console = window.console || {});
+            while (length--) {
+                method = methods[length];
+                if (!console[method]) { console[method] = noop; }
+            }
+        }());
+    </script>
+
+    <!-- main.js: email/phone reveal, #more toggle, scroll-to-top -->
+    <script>
+        $(document).ready(function () {
+
+            // Populate email and phone anchors (obfuscated in source,
+            // revealed via JS as per original main.js)
+            $('.email').attr('href', 'mailto:hello@lewiscooke.co.uk').html('hello@lewiscooke.co.uk');
+            $('.phone').attr('href', 'tel:07809411343').html('07809411343');
+
+            $('#contact form button').click(function() {
+                $('#contact form #status').hide();
+            });
+
+            $('#more').click(function (e) {
+                e.preventDefault();
+                var $moreBtn = $(this);
+                $moreBtn.remove();
+                $('#moreinfo').fadeIn(400);
+            });
+
+            // Show/hide scroll-to-top button on mobile
+            $(window).scroll(function () {
+                if (window.innerWidth < 769) {
+                    if ($(this).scrollTop() > 100) {
+                        $('#top').fadeIn(400);
+                    } else {
+                        $('#top').fadeOut(400);
+                    }
+                }
+            });
+
+            $('#top').click(function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 400);
+            });
+
+        });
+
+        function contactSuccess() {
+            $('#contact form #status').show();
+        }
+    </script>
+
+    <!-- Google reCAPTCHA (needed for the contact form widget) -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Google Analytics (UA-54991764-1) -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments); };
+            i[r].l = 1 * new Date();
+            a = s.createElement(o);
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54991764-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
